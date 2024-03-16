@@ -1,0 +1,8 @@
+<item>
+<title>$title</title>
+<pubDate>$dw, $da $mo $yr $ti:00 GMT</pubDate>
+<link>$url/$path_info/$yr/$mo_num/$da#$fn</link>
+<guid>$url/$path_info/$yr/$mo_num/$da#$fn</guid>
+<description><![CDATA[$body]]></description>  
+</item>
+   
