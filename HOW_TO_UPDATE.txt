@@ -28,7 +28,7 @@ Each annual R release means manual intervention is needed.
     
 3.  Make sure rJava is installed in the current R:
 
-     /usr/local/bin/R
+     ~/R/build/bin/R
      
      > install.packages("rJava")
       
@@ -38,7 +38,7 @@ Each annual R release means manual intervention is needed.
     
 5.  Run the diffNEWS.R script and make sure it worked:
 
-    /usr/local/bin/Rscript /home/murdoch/blosxom/diffNEWS.R
+    ~/R/build/bin/Rscript /home/murdoch/blosxom/diffNEWS.R
     
 6.  In the developer.r-project.org web page, add the new branch to the RSSfeeds.html 
     file, e.g.

@@ -361,11 +361,10 @@ dailyDiffNEWS <- function(file, previous, endDate=Sys.Date(), directory = "daily
 
 
 NEWSdone <- list("2010-06-27", 48298)
-NEWS36done <- list("2019-03-28", 76287)
-NEWS40done <- list("2020-03-26", 78076)
 NEWS41done <- list("2021-04-19", 80189)
 NEWS42done <- list("2022-03-24", 81976)
 NEWS43done <- list("2023-03-29", 84112)
+NEWS44done <- list("2024-03-26", 86207)
 
 load(file="~/blosxom/start.RData")
 
@@ -373,6 +372,9 @@ load(file="~/blosxom/start.RData")
 
 NEWSdone <- dailyDiffNEWS("~/R/R-devel/doc/NEWS.Rd", NEWSdone, 
                           dir="~/blosxom/data/R-devel/NEWS",prefix="n")
+
+NEWS44done <- dailyDiffNEWS("~/R/R-4-4-branch/doc/NEWS.Rd", NEWS44done, 
+                            dir="~/blosxom/data/R-4-4-branch/NEWS",prefix="n")
 
 NEWS43done <- dailyDiffNEWS("~/R/R-4-3-branch/doc/NEWS.Rd", NEWS43done, 
 			    dir="~/blosxom/data/R-4-3-branch/NEWS",prefix="n")
@@ -383,17 +385,10 @@ NEWS42done <- dailyDiffNEWS("~/R/R-4-2-branch/doc/NEWS.Rd", NEWS42done,
 NEWS41done <- dailyDiffNEWS("~/R/R-4-1-branch/doc/NEWS.Rd", NEWS41done,
                             dir="~/blosxom/data/R-4-1-branch/NEWS",prefix="n")
 
-NEWS40done <- dailyDiffNEWS("~/R/R-4-0-branch/doc/NEWS.Rd", NEWS40done,
-                            dir="~/blosxom/data/R-4-0-branch/NEWS",prefix="n")
-
-NEWS36done <- dailyDiffNEWS("~/R/R-3-6-branch/doc/NEWS.Rd", NEWS36done,
-                            dir="~/blosxom/data/R-3-6-branch/NEWS",prefix="n")
-
 
 save(NEWSdone,  
-     NEWS36done,
-     NEWS40done,
      NEWS41done,
      NEWS42done,
      NEWS43done,
+     NEWS44done,
      file="~/blosxom/start.RData")
